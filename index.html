@@ -9,6 +9,27 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+        .centered-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* If you want to align items vertically */
+            min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+            text-align: center; /* Center the text inside the container */
+        }
+        .container {
+            width: 60%; /* Adjust width as needed */
+            margin: 0 auto;
+        }
+          p.custom-style {
+            color: #474747;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 12pt;
+            font-weight: 300;
+            line-height: 1.50em;
+        }
+    </style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -37,19 +58,20 @@
 
 
 			<!-- Gigantic Heading -->
-				<section class="wrapper style2">
+				<section class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<p> 
+							<p class="custom-style"> 
 Our goal as the Drones working group is to: communicate the potential of drone-associated research to contribute to improving our understanding of tropical forests, to help researchers find resources to initiate and/or improve drone-related research, and to build resources to facilitate cross-site studies using drones.
 </p>
+</br>
 				
-							<p> 
-							In doing so, we have initiated building dynamic metadatabases that will make information on .
-							The motivation for these meta-databases is to create resources for group members and others looking for publicly available papers, protocols, and/or code to aid in their research, and/or seeking to identify potentially suitable datasets and collaborators for multi-site studies. (ATFS will not host datasets, and data need not be publicly available to be included in the database of datasets; any data owners potentially willing to collaborate on multi-site studies are welcome to include their metadata here.)  </p>
-						<p> 
+							<p class="custom-style"> 
+							In doing so, we started building dynamic metadatabases that will create resources for group members and others looking for publicly available papers, protocols, and/or code to aid in their research, and/or seeking to identify potentially suitable datasets and collaborators for multi-site studies. </p>
+						</br>
+
+						<p  class="custom-style">  
 						Please feel free to navigate to the pages on this website to get more information on the available metadatabases and to find the surveys to contribute information to the respective metadatabases. </p>
-			
 						</header>
 					</div>
 				</section>
@@ -60,8 +82,8 @@ Our goal as the Drones working group is to: communicate the potential of drone-a
 						<div class="row gtr-200">
 							<section class="col-4 col-12-narrower">
 								<div class="box highlight">
-									<i class="icon solid major fa-paper-plane"></i>
-									<h3>Drone datasets</h3>
+									<i href="no-sidebar_1.html" class="icon solid major fa-paper-plane"></i>
+									<h3 href="no-sidebar_1.html">Drone datasets</h3>
 									<p>Find out more about our drone dataset metadatabase and how to contribute information.</p>
 								</div>
 							</section>
@@ -85,43 +107,45 @@ Our goal as the Drones working group is to: communicate the potential of drone-a
 				
 			
 			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-					<section class="col-3 col-6-narrower col-12-mobilep">
-								<ul class="links">
-								<p>We are very excited to hear from anyone who is interested in contributing to our community! Please feel free to email us at atfsdwg@gmail.com or fill out the information box on the right and we will reach back out.</p>
-								</ul>
-							</section>
-						<div class="row">
-							<section class="col-6 col-12-narrower">
-								<h3>Get In Touch!</h3>
-								<form>
-									<div class="row gtr-50">
-										<div class="col-6 col-12-mobilep">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-mobilep">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Send Message" /></li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</section>
-						</div>
-					</div>
-
+	 <div class="centered-container">
+        <div class="container">
+            <section class="col-3 col-6-narrower col-12-mobilep">
+                <ul class="links">
+                    <p>We are very excited to hear from anyone who is interested in contributing to our community! Please feel free to email us at <b>atfsdwg@gmail.com</b> or fill out the information box on the right and we will reach back out.</p>
+                </ul>
+            </section>
+            
 					<!-- Icons -->
 						<ul class="icons">
 							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="https://github.com/atfs-dwg" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
+            <div class="row">
+                <section class="col-6 col-12">
+                    <h3>Get In Touch!</h3>
+                    <form>
+                        <div class="row gtr-50">
+                            <div class="col-6 col-12-mobilep">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="col-6 col-12-mobilep">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <li><input type="submit" class="button alt" value="Send Message" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
 
 					<!-- Copyright -->
 						<div class="copyright">
